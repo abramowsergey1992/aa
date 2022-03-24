@@ -1,0 +1,31 @@
+include mixin
+
+doctype html
+html(lang="ru")
+    block head
+        head
+            meta(charset="utf-8")
+            title Title your site
+            meta(content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport")
+            meta(content="ie=edge" http-equiv="x-ua-compatible")
+            link(rel="stylesheet" href="css/base.min.css")
+            link(rel="stylesheet" href="css/vendor.css")
+            link(rel="stylesheet" href="css/all.min.css")
+
+    body._page-404
+        div(style="position: absolute;height: 0;width: 0;")
+            !='<svg> <linearGradient id="base-gradient"><stop offset="0%" stop-color="#735AC0"/><stop offset="100%" stop-color="#B673E7"/></linearGradient></svg>'
+        div.wrapper
+            include component/header/header
+            include component/mobile-sidebar/mobile-sidebar
+            main.main
+                block content
+        include component/modal/modal
+   
+        
+        block scripts
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+            script(src='https://api-maps.yandex.ru/2.1?lang=ru_RU&amp;apikey=1740f390-3359-466c-a769-6df6824ae08a')
+            script(src='js/vendor.js')
+            script(src='js/main.js')
+            script(src='js/all.js') 

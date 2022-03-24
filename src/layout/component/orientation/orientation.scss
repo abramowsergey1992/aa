@@ -1,0 +1,37 @@
+.orientation-alert {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 40;
+	padding: 20px;
+	text-align: center;
+	line-height: 133%;
+	font-size: 24px;
+	text-transform: uppercase;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	&__bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: blur(10px);
+	}
+	svg {
+		margin-top: 15px;
+		animation: orientationchange 1.7s alternate infinite;
+	}
+	span {
+		color: #f9df94;
+	}
+	@media (orientation: portrait) {
+		display: flex;
+	}
+}

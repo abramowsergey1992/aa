@@ -1,0 +1,233 @@
+.publication {
+	&__back {
+		font-family: "TT Hoves";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 56px;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-decoration: none;
+		transition: color 0.3s;
+		svg {
+			fill: #fff;
+			transition: fill 0.3s;
+			margin-right: 7px;
+		}
+		&:hover {
+			color: $primary;
+			svg {
+				fill: $primary;
+			}
+		}
+	}
+}
+
+.publication-banner {
+	border-radius: 20px;
+	position: relative;
+	margin-top: 45px;
+	overflow: hidden;
+	min-height: 560px;
+	padding: 60px;
+	display: flex;
+	margin-bottom: 90px;
+	flex-direction: column;
+	&__img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+	&::before {
+		display: block;
+		content: "";
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		z-index: 2;
+		background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		);
+	}
+	&__head {
+		position: relative;
+		z-index: 4;
+		margin-top: auto;
+		margin-bottom: 20px;
+		font-size: 15px;
+		line-height: 153%;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+		color: #ffffff;
+		span {
+			display: inline-block;
+			&::after {
+				content: " · ";
+				display: inline-block;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	&__title {
+		margin-right: auto;
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 36px;
+			line-height: 48px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+	&__soc {
+		text-align: right;
+		span {
+			font-family: "TT Norms";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 23px;
+			letter-spacing: -0.03em;
+			text-transform: uppercase;
+			display: block;
+			margin-bottom: 15px;
+		}
+		&-row {
+			a {
+				display: inline-block;
+				margin-right: 20px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	&__row {
+		position: relative;
+		z-index: 4;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+}
+
+.typography {
+	max-width: 846px;
+	margin-left: auto;
+	margin-right: auto;
+	h2 {
+		font-family: "TT Hoves";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 133%;
+		letter-spacing: -0.02em;
+		margin-bottom: 20px;
+		margin-top: 80px;
+	}
+	img {
+		border-radius: 20px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		max-width: 100%;
+		&._big {
+			@media (min-width: 980px) {
+				margin-left: calc(((100vw - 957px) / 2) * -1);
+				width: calc(100% + ((100vw - 957px) / 2));
+				max-width: calc(100% + ((100vw - 957px) / 2));
+			}
+			@media (min-width: 1300px) {
+				margin-left: -170px;
+				width: calc(100% + 170px);
+				max-width: calc(100% + 170px);
+			}
+		}
+	}
+	ul {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		li {
+			position: relative;
+			padding-left: 20px;
+			&::after {
+				width: 6px;
+				height: 6px;
+				display: block;
+				border-radius: 50%;
+				content: "";
+				background: linear-gradient(
+					52.84deg,
+					#cc9748 -15149.99%,
+					#f9df94 12843.93%
+				);
+				position: absolute;
+				left: 0;
+				top: 10px;
+			}
+			p {
+			}
+		}
+	}
+	p {
+		font-family: "TT Norms";
+		font-style: normal;
+		font-size: 18px;
+		line-height: 156%;
+		letter-spacing: -0.03em;
+		color: #ffffff;
+		margin-bottom: 10px;
+		b {
+			font-weight: 600;
+		}
+		color {
+			color: $primary;
+		}
+	}
+}
+.publication-footer {
+	padding: 40px;
+	display: flex;
+	margin-top: 80px;
+	border-top: 1px dashed rgba($color: #fff, $alpha: 0.5);
+	border-bottom: 1px dashed rgba($color: #fff, $alpha: 0.5);
+	&__soc {
+		text-align: right;
+		margin-left: auto;
+
+		span {
+			font-family: "TT Norms";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 23px;
+			letter-spacing: -0.03em;
+			text-transform: uppercase;
+			display: block;
+			margin-bottom: 15px;
+		}
+		&-row {
+			a {
+				display: inline-block;
+				margin-right: 20px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

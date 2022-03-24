@@ -1,0 +1,80 @@
+extends ../../layout/layout
+block title
+	title Адвокат Андрей Андреев
+block content
+	.container.publications.page-inner
+		h1 публикации и общественные
+			br 
+			| проекты
+		.publications-filters
+			.publications-filter(data-filter="СМИ") СМИ
+			.publications-filter(data-filter="БЛОГ") БЛОГ
+			.publications-filter(data-filter="Проекты") Проекты
+			.publications-filter(data-filter="Видео") Видео
+		.publications__row 
+			.publication-preview._full 
+				.publication-preview__img-wrap 
+					+picture('public-1','jpg')
+				.publication-preview__content
+					.publication-preview__header 
+						span общественный проект
+						span 29 Сентября 2021
+					.publication-preview__title 
+						p Что такое
+							br  
+							| реструктуризация бизнеса
+					.publication-preview__desc
+						p Вместе с адвокатом Андреем Андреевым разбираемся, почему это явление становится массовым, и пытаемся понять, действительно ли суд – действенный способ заставить говорить о себе.
+					a(href="#").publication-preview__link Читать
+			.publication-preview 
+				.publication-preview__img-wrap 
+					+picture('public-2','jpg')
+				.publication-preview__content
+					.publication-preview__header 
+						span Публикация
+						span 29 Сентября 2021
+					.publication-preview__title 
+						p Как судебные процессы превратились в мощный пиар-инструмент
+					.publication-preview__desc
+						p Вместе с адвокатом Андреем Андреевым разбираемся, почему это явление становится массовым, и пытаемся понять, действительно ли суд – действенный способ заставить говорить о себе.
+					a(href="#").publication-preview__link Читать
+			.publication-preview 
+				.publication-preview__img-wrap 
+					+picture('public-3','jpg')
+				.publication-preview__content
+					.publication-preview__header 
+						span статья
+						span 29 Сентября 2021
+					.publication-preview__title 
+						p Не судимы будете:
+							br
+							| за что юридически отвечает гендиректор — полный разбор
+					.publication-preview__desc
+						p Пост генерального директора — это в первую очередь не полномочия и обязанности, а ответственность, вплоть до уголовной. Андрей Андреев («Андреев, Бодров, Гузенко и Партнеры»), разобрал, как вести дела на этой должности, чтобы не попасть под суд
+					a(href="#").publication-preview__link Читать
+			.publication-preview._video
+				.publication-preview__img-wrap 
+					+picture('public-4','jpg')
+				.publication-preview__content
+					.publication-preview__header 
+						span видео
+						span 29 Сентября 2021
+					.publication-preview__title 
+						p Почему вас могут не обанкротить
+					.publication-preview__desc
+						p Пост генерального директора — это в первую очередь не полномочия и обязанности, а ответственность, вплоть до уголовной. Андрей Андреев («Андреев, Бодров, Гузенко и Партнеры»), разобрал, как вести дела на этой должности, чтобы не попасть под суд
+					a(href="#").publication-preview__link Читать
+			.publication-preview 
+				.publication-preview__img-wrap 
+					+picture('public-5','jpg')
+				.publication-preview__content
+					.publication-preview__header 
+						span публикация
+						span 29 Сентября 2021
+					.publication-preview__title 
+						p Между двух трагедий. Почему мы снова оказались не готовы
+					.publication-preview__desc
+						p Прошло 4 месяца со страшных событий в Казани, унёсших жизни 9 человек.ы
+					a(href="#").publication-preview__link Читать
+
+		

@@ -1,0 +1,45 @@
+.rsidebar {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 45px;
+	transition: opacity 0.3s;
+	transition-delay: 3s;
+	@media (orientation: portrait) {
+		opacity: 0 !important;
+	}
+	body.front & {
+		opacity: 0;
+	}
+	body.front._go & {
+		opacity: 1;
+	}
+	z-index: 300;
+	&__social {
+		position: absolute;
+		top: 50%;
+		right: 30px;
+		@media (max-width: 992px) {
+			right: 15px;
+		}
+		transform: translateY(-50%);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		a {
+			display: block;
+			._hover-social-back {
+				svg {
+					fill: #000 !important;
+				}
+			}
+			svg {
+				fill: #fff;
+			}
+		}
+		li {
+			margin: 10px 0;
+		}
+	}
+}

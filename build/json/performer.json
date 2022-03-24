@@ -1,0 +1,124 @@
+{ 
+  "list": [ 
+      {
+          "name": "Корвус Подович", 
+          "link": "performer-data.html", 
+          "specialization":"Frontend разработчик",
+          "grade": {
+            "quality" : 10,
+            "time" : 10,
+            "price" : 10
+          }
+      }, 
+      {
+          "name": "Айфонин Промакс", 
+          "link": "performer-data.html", 
+          "specialization":"Дизайнер",
+          "grade": {
+            "quality" : 5,
+            "time" : 4,
+            "price" : 6
+          }
+      }, 
+      {
+          "name": "Макбуков Константин", 
+          "link": "performer-data.html", 
+          "specialization":"Backend разработчик",
+          "grade": {
+            "quality" : 2,
+            "time" : 1,
+            "price" : 9
+          }
+      }, 
+      {
+          "name": "Эйплов Виталий", 
+          "link": "performer-data.html", 
+          "specialization":"Менеджер проекта",
+          "grade": {
+            "quality" : 4,
+            "time" : 2,
+            "price" : 7
+          }
+      }, 
+      {
+          "name": "Айпадов Валерий", 
+          "link": "performer-data.html", 
+          "specialization":"Иллюстартор",
+          "grade": {
+            "quality" : 7,
+            "time" : 5,
+            "price" : 5
+          }
+      }, 
+      {
+          "name": "Эирподскин Максим", 
+          "link": "performer-data.html", 
+          "specialization":"3д визуализатор",
+          "grade": {
+            "quality" : 1,
+            "time" : 6,
+            "price" : 8
+          }
+      }, 
+      {
+          "name": "Корвус Подович", 
+          "link": "performer-data.html", 
+          "specialization":"Frontend разработчик",
+          "grade": {
+            "quality" : 3,
+            "time" : 5,
+            "price" : 9
+          }
+      }, 
+      {
+          "name": "Айфонин Промакс", 
+          "link": "performer-data.html", 
+          "specialization":"Дизайнер",
+          "grade": {
+            "quality" : 9,
+            "time" : 8,
+            "price" : 7
+          }
+      }, 
+      {
+          "name": "Макбуков Константин", 
+          "link": "performer-data.html", 
+          "specialization":"Backend разработчик",
+          "grade": {
+            "quality" : 6,
+            "time" : 5,
+            "price" : 9
+          }
+      }, 
+      {
+          "name": "Эйплов Виталий", 
+          "link": "performer-data.html", 
+          "specialization":"Менеджер проекта",
+          "grade": {
+            "quality" : 1,
+            "time" : 2,
+            "price" : 4
+          }
+      }, 
+      {
+          "name": "Айпадов Валерий", 
+          "link": "performer-data.html", 
+          "specialization":"Иллюстартор",
+          "grade": {
+            "quality" : 4,
+            "time" : 7,
+            "price" : 9
+          }
+      }, 
+      {
+          "name": "Эирподскин Максим", 
+          "link": "performer-data.html", 
+          "specialization":"3д визуализатор",
+          "grade": {
+            "quality" : 1,
+            "time" : 6,
+            "price" : 2
+          }
+      }
+   ] 
+}

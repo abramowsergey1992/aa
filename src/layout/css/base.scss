@@ -1,0 +1,78 @@
+body {
+	font-family: "Mont";
+	font-style: normal;
+	font-weight: normal;
+	background: #000;
+	font-size: 16px;
+	line-height: 150%;
+	color: #fff;
+	letter-spacing: -0.01em;
+	&._no-scroll {
+		overflow: hidden;
+	}
+}
+.pace {
+	display: none !important;
+}
+.page {
+	// min-height: calc(var(--vh, 1vh) * 100);
+	height: 100%;
+	&._center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.inner-page {
+	padding: 0 30px;
+}
+
+.grid {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 14;
+	pointer-events: none;
+	span {
+		height: 100%;
+		display: block;
+		position: absolute;
+		width: 0;
+		border-left: 1px solid rgba(255, 255, 255, 0.1);
+		top: 0;
+		&:nth-child(1) {
+			left: 30px;
+		}
+		&:nth-child(2) {
+			left: 126px;
+		}
+		&:nth-child(3) {
+			left: 45%;
+			@media (max-width: 600px) {
+				display: none;
+			}
+		}
+		&:nth-child(4) {
+			left: 70%;
+			@media (max-width: 600px) {
+				display: none;
+			}
+		}
+		&:nth-child(5) {
+			right: 30px;
+		}
+	}
+}
+.container {
+	max-width: 1220px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.page-inner {
+	padding-top: 144px;
+	padding-bottom: 144px;
+}

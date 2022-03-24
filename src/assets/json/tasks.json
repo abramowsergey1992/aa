@@ -1,0 +1,323 @@
+{
+	"list": [{
+			"status": "completed",
+			"project": "Воздвиженское",
+			"task": "Настроить отображение карточек товаров на странице каталога",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "Макбуков Константин",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Yacht Hunter",
+			"task": "Правки по Yacht Hunter",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "Эйплов Виталий",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Creative Team",
+			"task": "Правки по Creative Team",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "йпадов Валерий",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Corvus Pods",
+			"task": "Правки по Corvus Pods",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "Корвус Подович",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Corvus Pods",
+			"task": "Правки по Галерея Леонида Шишкина",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "Эирподскин Максим",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Воздвиженское",
+			"task": "Настроить отображение карточек товаров на странице каталога",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "Макбуков Константин",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Yacht Hunter",
+			"task": "Правки по Yacht Hunter",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "Эйплов Виталий",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Creative Team",
+			"task": "Правки по Creative Team",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "йпадов Валерий",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Corvus Pods",
+			"task": "Правки по Corvus Pods",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "Корвус Подович",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "completed",
+			"project": "Corvus Pods",
+			"task": "Правки по Галерея Леонида Шишкина",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021",
+				"finish": "14.10.2021"
+			},
+			"performer": {
+				"name": "Эирподскин Максим",
+				"href": "performer-data.html"
+			},
+			"grade": {
+				"quality": 6,
+				"time": 5,
+				"price": 8
+			}
+		},
+		{
+			"status": "current",
+			"project": "Воздвиженское",
+			"task": "Настроить отображение карточек товаров на странице каталога",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "Макбуков Константин",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Yacht Hunter",
+			"task": "Правки по Yacht Hunter",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "Эйплов Виталий",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Creative Team",
+			"task": "Правки по Creative Team",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "йпадов Валерий",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Corvus Pods",
+			"task": "Правки по Corvus Pods",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "Корвус Подович",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Corvus Pods",
+			"task": "Правки по Галерея Леонида Шишкина",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "Эирподскин Максим",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Воздвиженское",
+			"task": "Настроить отображение карточек товаров на странице каталога",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "Макбуков Константин",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Yacht Hunter",
+			"task": "Правки по Yacht Hunter",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "Эйплов Виталий",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Creative Team",
+			"task": "Правки по Creative Team",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "йпадов Валерий",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Corvus Pods",
+			"task": "Правки по Corvus Pods",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "Корвус Подович",
+				"href": "performer-data.html"
+			}
+		},
+		{
+			"status": "current",
+			"project": "Corvus Pods",
+			"task": "Правки по Галерея Леонида Шишкина",
+			"link": "task-data.html",
+			"date": {
+				"start": "04.08.2021"
+			},
+			"performer": {
+				"name": "Эирподскин Максим",
+				"href": "performer-data.html"
+			}
+		}
+	]
+}
