@@ -4,32 +4,29 @@
 	}
 }
 
-.wait {
-	&__orientation-alert {
-		display: none;
+.p404 {
+	&__desc {
 		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 40;
-		padding: 20px;
-		text-align: center;
-		line-height: 133%;
-		font-size: 24px;
+		left: 30px;
+		bottom: 80px;
+		@media (max-height: 500px) {
+			bottom: 30px;
+		}
+	}
+	&__title {
+		font-family: "Druk XCondensed Cyr Super";
+		font-weight: 900;
+		font-size: 288px;
+		line-height: 90.3%;
+		letter-spacing: 0.005em;
 		text-transform: uppercase;
-		align-items: center;
-		flex-direction: column;
-		justify-content: center;
-		svg {
-			margin-top: 15px;
-			animation: orientationchange 1.7s alternate infinite;
-		}
-		span {
-			color: #f9df94;
-		}
-		@media (orientation: portrait) {
-			display: flex;
+		color: #ffffff;
+		position: absolute;
+		left: 30px;
+		top: 144px;
+		@media (max-height: 500px) {
+			font-size: 188px;
+			top: 60px;
 		}
 	}
 	&__bg {

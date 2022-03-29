@@ -2,17 +2,22 @@ extends ../../layout/layout
 block title
 	title Адвокат Андрей Андреев
 block content
+	div(style="display:none")
+		svg
+			<clipPath  id="rombinvert" >
+				<rect  x="-0px" y="-0px" width="29.1789" height="29.1789" style="transform:rotate(45deg);" stroke="#F9DF94"/>
+			</clipPath>
 	.container.publications.page-inner
 		h1 публикации и общественные
 			br 
 			| проекты
 		.publications-filters
-			.publications-filter(data-filter="СМИ") СМИ
-			.publications-filter(data-filter="БЛОГ") БЛОГ
-			.publications-filter(data-filter="Проекты") Проекты
-			.publications-filter(data-filter="Видео") Видео
+			._hover.publications-filter.control(data-filter="._smi") СМИ
+			._hover.publications-filter.control(data-filter="._blog") БЛОГ
+			._hover.publications-filter.control(data-filter="._project") Проекты
+			._hover.publications-filter.control(data-filter="._video") Видео
 		.publications__row 
-			.publication-preview._full 
+			.mix.publication-preview._project._full 
 				.publication-preview__img-wrap 
 					+picture('public-1','jpg')
 				.publication-preview__content
@@ -26,7 +31,7 @@ block content
 					.publication-preview__desc
 						p Вместе с адвокатом Андреем Андреевым разбираемся, почему это явление становится массовым, и пытаемся понять, действительно ли суд – действенный способ заставить говорить о себе.
 					a(href="#").publication-preview__link Читать
-			.publication-preview 
+			.mix.publication-preview._blog 
 				.publication-preview__img-wrap 
 					+picture('public-2','jpg')
 				.publication-preview__content
@@ -38,7 +43,7 @@ block content
 					.publication-preview__desc
 						p Вместе с адвокатом Андреем Андреевым разбираемся, почему это явление становится массовым, и пытаемся понять, действительно ли суд – действенный способ заставить говорить о себе.
 					a(href="#").publication-preview__link Читать
-			.publication-preview 
+			.mix.publication-preview._smi 
 				.publication-preview__img-wrap 
 					+picture('public-3','jpg')
 				.publication-preview__content
@@ -52,7 +57,7 @@ block content
 					.publication-preview__desc
 						p Пост генерального директора — это в первую очередь не полномочия и обязанности, а ответственность, вплоть до уголовной. Андрей Андреев («Андреев, Бодров, Гузенко и Партнеры»), разобрал, как вести дела на этой должности, чтобы не попасть под суд
 					a(href="#").publication-preview__link Читать
-			.publication-preview._video
+			.mix.publication-preview._video
 				.publication-preview__img-wrap 
 					+picture('public-4','jpg')
 				.publication-preview__content
@@ -63,8 +68,8 @@ block content
 						p Почему вас могут не обанкротить
 					.publication-preview__desc
 						p Пост генерального директора — это в первую очередь не полномочия и обязанности, а ответственность, вплоть до уголовной. Андрей Андреев («Андреев, Бодров, Гузенко и Партнеры»), разобрал, как вести дела на этой должности, чтобы не попасть под суд
-					a(href="#").publication-preview__link Читать
-			.publication-preview 
+					a._video-popup(href="#video-1").publication-preview__link Читать
+			.mix.publication-preview._blog 
 				.publication-preview__img-wrap 
 					+picture('public-5','jpg')
 				.publication-preview__content
@@ -77,4 +82,15 @@ block content
 						p Прошло 4 месяца со страшных событий в Казани, унёсших жизни 9 человек.ы
 					a(href="#").publication-preview__link Читать
 
-		
+	#video-1.video-popup
+		.video-popup__overlay._hover
+		.video-popup__padding
+			.video-popup__content
+				.video-popup__close._hover 
+					<svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L31 30M1 30L31 1" stroke="white" stroke-width="2"/>
+					</svg>
+				.video-popup__hidden
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/N2b_XmTv9oI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				.video-popup__wrap 
+					

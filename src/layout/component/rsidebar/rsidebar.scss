@@ -22,6 +22,9 @@
 		right: 30px;
 		@media (max-width: 992px) {
 			right: 15px;
+			.inner-page & {
+				right: 7px;
+			}
 		}
 		transform: translateY(-50%);
 		list-style: none;

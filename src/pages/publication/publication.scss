@@ -1,4 +1,7 @@
 .publication {
+	@media (orientation: portrait) {
+		opacity: 0 !important;
+	}
 	&__back {
 		font-family: "TT Hoves";
 		font-style: normal;
@@ -34,6 +37,12 @@
 	display: flex;
 	margin-bottom: 90px;
 	flex-direction: column;
+	@media (max-width: 992px) {
+		margin-top: 20px;
+		padding: 40px 20px;
+		margin-bottom: 50px;
+		min-height: initial;
+	}
 	&__img {
 		position: absolute;
 		left: 0;
@@ -90,11 +99,19 @@
 			font-weight: 400;
 			font-size: 36px;
 			line-height: 48px;
+			@media (max-width: 992px) {
+				font-size: 28px;
+				line-height: 140%;
+				margin-bottom: 30px;
+			}
 			color: #fff;
 			text-transform: uppercase;
 		}
 	}
 	&__soc {
+		@media (max-width: 992px) {
+			margin-left: auto;
+		}
 		text-align: right;
 		span {
 			font-family: "TT Norms";
@@ -123,6 +140,9 @@
 		display: flex;
 		align-items: center;
 		flex-direction: row;
+		@media (max-width: 992px) {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -139,6 +159,10 @@
 		letter-spacing: -0.02em;
 		margin-bottom: 20px;
 		margin-top: 80px;
+		@media (max-width: 992px) {
+			font-size: 28px;
+			margin-top: 40px;
+		}
 	}
 	img {
 		border-radius: 20px;
@@ -205,6 +229,10 @@
 	margin-top: 80px;
 	border-top: 1px dashed rgba($color: #fff, $alpha: 0.5);
 	border-bottom: 1px dashed rgba($color: #fff, $alpha: 0.5);
+	@media (max-width: 992px) {
+		padding: 20px;
+		margin-top: 40px;
+	}
 	&__soc {
 		text-align: right;
 		margin-left: auto;

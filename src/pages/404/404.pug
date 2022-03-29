@@ -1,0 +1,17 @@
+extends ../../layout/layout
+block title
+	title Адвокат Андрей Андреев
+block content
+	.page.inner-page.p404
+		<video id="p404-video" class="p404__bg" loop autoplay muted playsinline>
+			<source src="video/08.mp4" type='video/mp4'>
+			<source src="video/08.avi" type='video/avi'>
+		</video>
+		.p404__title 404
+		.p404__desc
+			p К сожалению, данная страница не найдена,
+				br 
+				| вы можете вернуться на главную страницу
+	style 
+		!="footer{display:none !important}"
+

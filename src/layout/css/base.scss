@@ -71,8 +71,16 @@ body {
 	padding-right: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	@media (max-width: 992px) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 .page-inner {
 	padding-top: 144px;
 	padding-bottom: 144px;
+	@media (max-width: 992px) {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
 }

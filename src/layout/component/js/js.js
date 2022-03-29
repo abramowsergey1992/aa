@@ -3,4 +3,5 @@ $(function () {
     parallax();
     frontSlider();
     orientation();
+    publications();
 }) 

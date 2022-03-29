@@ -79,6 +79,12 @@
 .step {
 	position: relative;
 	height: 100%;
+	&._no-anim {
+		* {
+			transition: none !important;
+			transition-delay: 0 !important;
+		}
+	}
 	&.swiper-slide-active {
 		.text p {
 			color: $primary;
@@ -201,6 +207,7 @@
 		transform: translateX(-50%);
 		transition: opacity 1s;
 		z-index: 10;
+		opacity: 0;
 		@media (orientation: portrait) {
 			opacity: 0 !important;
 		}
@@ -215,6 +222,7 @@
 		path {
 			transition: fill 0.3s;
 		}
+
 		._play-video & {
 			opacity: 0;
 		}
@@ -259,7 +267,7 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			color: #000;
+			color: #58514e;
 			clip-path: url(#rombS1name);
 			-webkit-text-stroke: 1px $primary;
 			@media (max-width: 992px) {
@@ -318,10 +326,12 @@
 	&__line {
 		position: absolute;
 		transform: scale(0);
-		opacity: 0;
-		transition: transform 0.4s, opacity 0.3s;
+		opacity: 1;
+		filter: blur(30px);
+		transition: filter 1.5s, transform 1.5s, opacity 0.3s;
 		.swiper-slide-active & {
 			opacity: 1;
+			filter: blur(0px);
 			transform: scale(1);
 		}
 		p {
@@ -437,12 +447,14 @@
 
 	&__text {
 		max-width: 50%;
+		width: 100%;
 		margin-left: auto;
 		@media (max-width: 992px) {
 			max-width: 500px;
 		}
 	}
 	#step-3-svg {
+		max-height: 350px;
 		@media (max-width: 992px) {
 			display: none;
 		}
@@ -605,6 +617,40 @@
 	}
 }
 .step-6 {
+	&__svg-wrap {
+		position: absolute;
+		right: 0;
+		height: 265px;
+		top: 137px;
+		overflow: hidden;
+		pointer-events: none;
+		width: calc(100vw - 150px);
+	}
+	#step-6-svg {
+		margin-top: 49px;
+		margin-right: -150px;
+		width: auto;
+		height: 265px;
+		position: absolute;
+		left: 0;
+		margin: 0;
+		@media (max-width: 992px) {
+			display: none;
+		}
+		svg {
+		}
+		.svg-elem-1 {
+			stroke-dashoffset: 3719.35693359375px;
+			stroke-dasharray: 3719.35693359375px;
+			-webkit-transition: stroke-dashoffset 3s linear 6s;
+			transition: stroke-dashoffset 3s linear 6s;
+		}
+	}
+	&.swiper-slide-active {
+		#step-6-svg .svg-elem-1 {
+			stroke-dashoffset: 7438.7138671875px;
+		}
+	}
 	&__content {
 		position: absolute;
 		left: 50%;
@@ -625,8 +671,8 @@
 		}
 	}
 	&__public {
-		border-radius: 20px;
-		text-align: center;
+		border-radius: 0px;
+		text-align: left;
 		font-family: "TT Hoves";
 		font-weight: 500;
 		font-style: normal;
@@ -634,6 +680,8 @@
 		line-height: 153%;
 		letter-spacing: -0.03em;
 		text-transform: uppercase;
+		background: rgba(255, 255, 255, 0.1);
+		position: relative;
 		color: #fff;
 		text-decoration: none;
 		display: flex;
@@ -641,27 +689,30 @@
 		align-items: center;
 		justify-content: center;
 		padding: 30px;
+		padding-right: 78px;
 		opacity: 0;
-		border: 1px solid #acacac;
 		transition: opacity 0.3s 8s, background 0.3s 0s, border 0.3s 0s,
 			color 0.3s 0s;
 
 		.swiper-slide-active & {
 			opacity: 1;
 		}
-		background: transparent;
 		color: #fff;
 		&:hover {
 			border-color: #cc9748;
 			background: #cc9748;
+			color: #1d1b1a;
 			svg {
-				fill: #fff;
+				fill: #1d1b1a;
 			}
 		}
 		svg {
 			fill: $primary;
 			transition: fill 0.3s;
-			margin-top: 20px;
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			transform: translateY(-50%);
 		}
 		@media (max-width: 992px) {
 			padding: 15px;
@@ -669,15 +720,14 @@
 		}
 	}
 	&__contact {
-		background: #fff;
-		border-radius: 20px;
-		padding: 35px;
+		border-radius: 0px;
+		padding: 28px;
 		display: flex;
-		min-height: 245px;
+		min-height: 100px;
 		justify-content: center;
 		flex-direction: column;
 		text-align: left;
-		color: #18100d;
+		color: #fff;
 		opacity: 0;
 		transition: opacity 0.3s;
 		transition-delay: 7.5s;
@@ -685,6 +735,7 @@
 			padding: 15px;
 			min-height: initial;
 		}
+
 		.swiper-slide-active & {
 			opacity: 1;
 		}
@@ -711,6 +762,15 @@
 			letter-spacing: -0.03em;
 			text-transform: uppercase;
 			color: #18100d;
+			margin-bottom: 20px;
+			&._adress {
+				color: #fff;
+				font-size: 20px;
+				font-weight: 300;
+				line-height: 115%;
+				margin-bottom: 20px;
+				/* or */
+			}
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -724,16 +784,19 @@
 		}
 	}
 	&__row {
-		max-width: 573px;
+		max-width: 344px;
 		margin-left: auto;
 		margin-top: auto;
 		margin-bottom: auto;
 		display: grid;
-		grid-template-columns: 358px auto;
+		position: relative;
+		grid-template-columns: 1fr;
 		grid-gap: 10px;
 		@media (max-width: 992px) {
 			margin-top: 30px;
 			margin-right: auto;
+			max-width: 100%;
+			align-items: center;
 			grid-template-columns: 300px auto;
 		}
 	}
